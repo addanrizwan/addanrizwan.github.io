@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
   :root {
     --navy: #0d1f3c;
     --blue: #1a4b8c;
@@ -17,16 +17,16 @@
     --text: #1e1e1e;
     --muted: #666;
   }
- 
+
   html { scroll-behavior: smooth; }
- 
+
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--cream);
     color: var(--text);
     overflow-x: hidden;
   }
- 
+
   /* ── HERO ── */
   .hero {
     min-height: 100vh;
@@ -36,7 +36,7 @@
     position: relative;
     overflow: hidden;
   }
- 
+
   .hero::before {
     content: '';
     position: absolute;
@@ -46,7 +46,7 @@
     top: -100px; right: -100px;
     pointer-events: none;
   }
- 
+
   .hero::after {
     content: '';
     position: absolute;
@@ -56,7 +56,7 @@
     bottom: -80px; left: 40%;
     pointer-events: none;
   }
- 
+
   .hero-left {
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@
     position: relative;
     z-index: 1;
   }
- 
+
   .hero-tag {
     display: inline-block;
     background: rgba(74,144,217,0.2);
@@ -81,7 +81,7 @@
     width: fit-content;
     animation: fadeUp 0.8s ease both;
   }
- 
+
   .hero-name {
     font-family: 'Playfair Display', serif;
     font-size: clamp(3rem, 5vw, 5rem);
@@ -91,9 +91,9 @@
     margin-bottom: 20px;
     animation: fadeUp 0.8s 0.15s ease both;
   }
- 
+
   .hero-name span { color: var(--gold); }
- 
+
   .hero-role {
     font-size: 1.1rem;
     color: rgba(255,255,255,0.6);
@@ -102,12 +102,12 @@
     line-height: 1.7;
     animation: fadeUp 0.8s 0.3s ease both;
   }
- 
+
   .hero-cta {
     display: flex; gap: 16px; flex-wrap: wrap;
     animation: fadeUp 0.8s 0.45s ease both;
   }
- 
+
   .btn {
     padding: 14px 32px;
     border-radius: 3px;
@@ -118,20 +118,20 @@
     transition: all 0.2s;
     display: inline-block;
   }
- 
+
   .btn-primary {
     background: var(--gold);
     color: var(--navy);
   }
   .btn-primary:hover { background: #e0aa30; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,152,42,0.35); }
- 
+
   .btn-outline {
     background: transparent;
     color: #fff;
     border: 1px solid rgba(255,255,255,0.35);
   }
   .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.07); transform: translateY(-2px); }
- 
+
   .hero-right {
     display: flex;
     align-items: center;
@@ -141,12 +141,12 @@
     z-index: 1;
     animation: fadeUp 0.8s 0.2s ease both;
   }
- 
+
   .avatar-wrap {
     position: relative;
     width: 280px; height: 280px;
   }
- 
+
   .avatar-ring {
     position: absolute;
     inset: -16px;
@@ -154,7 +154,7 @@
     border: 2px solid rgba(74,144,217,0.3);
     animation: spin 18s linear infinite;
   }
- 
+
   .avatar-ring::before {
     content: '';
     position: absolute;
@@ -164,7 +164,7 @@
     top: 0; left: 50%;
     transform: translateX(-50%);
   }
- 
+
   .avatar-circle {
     width: 100%; height: 100%;
     border-radius: 50%;
@@ -180,7 +180,7 @@
     position: relative;
     z-index: 1;
   }
- 
+
   .stats-bar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -188,7 +188,7 @@
     border-top: 1px solid rgba(255,255,255,0.08);
     animation: fadeUp 0.8s 0.6s ease both;
   }
- 
+
   .stat {
     padding: 24px 0;
     text-align: center;
@@ -209,12 +209,12 @@
     color: rgba(255,255,255,0.4);
     margin-top: 4px;
   }
- 
+
   /* ── SECTIONS ── */
   section { padding: 100px 0; }
- 
+
   .container { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
- 
+
   .section-label {
     font-size: 0.72rem;
     text-transform: uppercase;
@@ -223,7 +223,7 @@
     font-weight: 500;
     margin-bottom: 12px;
   }
- 
+
   .section-title {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 3.5vw, 3rem);
@@ -232,7 +232,7 @@
     margin-bottom: 56px;
     line-height: 1.2;
   }
- 
+
   /* ── ABOUT ── */
   .about-grid {
     display: grid;
@@ -240,16 +240,16 @@
     gap: 80px;
     align-items: center;
   }
- 
+
   .about-text p {
     font-size: 1.05rem;
     line-height: 1.85;
     color: var(--muted);
     margin-bottom: 20px;
   }
- 
+
   .about-text p strong { color: var(--text); }
- 
+
   .lang-chips {
     display: flex; gap: 10px; flex-wrap: wrap; margin-top: 32px;
   }
@@ -262,13 +262,13 @@
     background: rgba(26,75,140,0.05);
     font-weight: 500;
   }
- 
+
   .about-values {
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
- 
+
   .value-card {
     padding: 28px 32px;
     background: #fff;
@@ -279,12 +279,12 @@
   .value-card:hover { transform: translateX(6px); box-shadow: 0 6px 30px rgba(0,0,0,0.1); }
   .value-card h3 { font-size: 1rem; font-weight: 500; color: var(--navy); margin-bottom: 6px; }
   .value-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
- 
+
   /* ── EXPERIENCE ── */
   .experience { background: var(--navy); }
   .experience .section-title { color: #fff; }
   .experience .section-label { color: rgba(74,144,217,0.8); }
- 
+
   .timeline { position: relative; }
   .timeline::before {
     content: '';
@@ -293,12 +293,12 @@
     width: 2px;
     background: linear-gradient(to bottom, var(--sky), transparent);
   }
- 
+
   .timeline-item {
     padding: 0 0 48px 40px;
     position: relative;
   }
- 
+
   .timeline-item::before {
     content: '';
     position: absolute;
@@ -308,7 +308,7 @@
     background: var(--gold);
     box-shadow: 0 0 0 3px rgba(201,152,42,0.2);
   }
- 
+
   .tl-date {
     font-size: 0.75rem;
     letter-spacing: 0.1em;
@@ -317,7 +317,7 @@
     margin-bottom: 8px;
     font-weight: 500;
   }
- 
+
   .tl-role {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
@@ -325,27 +325,27 @@
     color: #fff;
     margin-bottom: 4px;
   }
- 
+
   .tl-org {
     font-size: 0.9rem;
     color: rgba(255,255,255,0.5);
     margin-bottom: 14px;
     font-style: italic;
   }
- 
+
   .tl-desc {
     font-size: 0.92rem;
     color: rgba(255,255,255,0.65);
     line-height: 1.75;
   }
- 
+
   /* ── SKILLS ── */
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px;
   }
- 
+
   .skill-card {
     padding: 32px 28px;
     background: #fff;
@@ -357,26 +357,26 @@
   .skill-icon { font-size: 1.8rem; margin-bottom: 16px; }
   .skill-card h3 { font-size: 0.95rem; font-weight: 500; color: var(--navy); margin-bottom: 8px; }
   .skill-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
- 
+
   /* ── CONTACT ── */
   .contact { background: var(--navy); }
   .contact .section-title { color: #fff; }
   .contact .section-label { color: rgba(74,144,217,0.8); }
- 
+
   .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: start;
   }
- 
+
   .contact-text {
     font-size: 1rem;
     color: rgba(255,255,255,0.6);
     line-height: 1.8;
     margin-bottom: 40px;
   }
- 
+
   .contact-detail {
     display: flex;
     align-items: center;
@@ -395,13 +395,13 @@
     font-size: 0.9rem;
     flex-shrink: 0;
   }
- 
+
   .contact-form {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
- 
+
   .form-group { display: flex; flex-direction: column; gap: 6px; }
   .form-group label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); }
   .form-group input, .form-group textarea {
@@ -418,7 +418,7 @@
   }
   .form-group input:focus, .form-group textarea:focus { border-color: var(--sky); }
   .form-group textarea { height: 120px; }
- 
+
   /* ── FOOTER ── */
   footer {
     background: #060e1c;
@@ -427,7 +427,7 @@
     font-size: 0.8rem;
     color: rgba(255,255,255,0.25);
   }
- 
+
   /* ── ANIMATIONS ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
@@ -437,7 +437,7 @@
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
   }
- 
+
   /* ── NAV ── */
   nav {
     position: fixed;
@@ -495,7 +495,7 @@
     background: var(--gold);
     border-radius: 2px;
   }
- 
+
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
     nav { padding: 16px 24px; }
@@ -515,7 +515,7 @@
 </style>
 </head>
 <body>
- 
+
 <nav id="nav">
   <div class="nav-logo">A<span>R</span></div>
   <ul class="nav-links">
@@ -526,7 +526,7 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
- 
+
 <!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-left">
@@ -547,7 +547,7 @@
       <div class="avatar-circle">AR</div>
     </div>
   </div>
- 
+
   <div class="stats-bar" style="position:absolute;bottom:0;left:0;right:0;">
     <div class="stat">
       <div class="stat-num">4+</div>
@@ -563,7 +563,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ABOUT -->
 <section id="about">
   <div class="container">
@@ -603,7 +603,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- EXPERIENCE -->
 <section id="experience" class="experience">
   <div class="container">
@@ -631,7 +631,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- SKILLS -->
 <section id="skills">
   <div class="container">
@@ -671,7 +671,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="container">
@@ -714,11 +714,11 @@
     </div>
   </div>
 </section>
- 
+
 <footer>
   © 2026 Addan Rizwan · Elk Grove, CA · Built with care
 </footer>
- 
+
 <script>
   async function submitForm() {
     const name    = document.getElementById('cf-name').value.trim();
@@ -756,14 +756,14 @@
     btn.textContent = 'Send Message';
     btn.disabled = false;
   }
- 
+
   const nav = document.getElementById('nav');
   const navLinks = document.querySelectorAll('.nav-links a');
   const sections = ['hero','about','experience','skills','contact'];
- 
+
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
- 
+
     let current = 'hero';
     for (const id of sections) {
       const el = document.getElementById(id);
