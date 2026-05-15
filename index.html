@@ -523,6 +523,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -672,6 +673,52 @@
   </div>
 </section>
 
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label">What I've Built</div>
+    <h2 class="section-title">Coding Projects</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🏥</div>
+        <h3>Patient Intake CLI Tool</h3>
+        <p>A Python command-line application that simulates a hospital intake system — collects patient info, assigns priority levels, and logs records to a CSV file. Built to practice real-world data handling.</p>
+        <div style="margin-top:14px;font-size:0.75rem;color:var(--sky);font-weight:500;letter-spacing:0.06em;">PYTHON · CSV · CLI</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📅</div>
+        <h3>Appointment Scheduler App</h3>
+        <p>A JavaScript web app that lets users book, view, and cancel appointments through a clean UI. Features local storage persistence and time-conflict detection — inspired by my front desk experience.</p>
+        <div style="margin-top:14px;font-size:0.75rem;color:var(--sky);font-weight:500;letter-spacing:0.06em;">JAVASCRIPT · HTML/CSS · LOCAL STORAGE</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📊</div>
+        <h3>Inventory Tracker</h3>
+        <p>A Python + SQLite desktop utility for tracking office supplies and parts inventory. Supports adding, removing, and searching items with a simple text-based menu. Used at Caliber Tires as a personal productivity tool.</p>
+        <div style="margin-top:14px;font-size:0.75rem;color:var(--sky);font-weight:500;letter-spacing:0.06em;">PYTHON · SQLITE · DATA MANAGEMENT</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <h3>Personal Portfolio Website</h3>
+        <p>This website! Built from scratch using HTML, CSS, and JavaScript — featuring smooth scroll navigation, animated sections, a live contact form, and a fully responsive mobile layout.</p>
+        <div style="margin-top:14px;font-size:0.75rem;color:var(--sky);font-weight:500;letter-spacing:0.06em;">HTML · CSS · JAVASCRIPT · FORMSPREE</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🔐</div>
+        <h3>Password Strength Checker</h3>
+        <p>A JavaScript tool that evaluates password strength in real time — checking length, character variety, and common patterns. Built as a security-focused mini project for a computer science course.</p>
+        <div style="margin-top:14px;font-size:0.75rem;color:var(--sky);font-weight:500;letter-spacing:0.06em;">JAVASCRIPT · REGEX · SECURITY</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🤖</div>
+        <h3>Chatbot Dispatcher Prototype</h3>
+        <p>An experimental Python chatbot that simulates a hospital operator — routes keyword-based queries to the right department response. Early-stage prototype exploring NLP concepts from class.</p>
+        <div style="margin-top:14px;font-size:0.75rem;color:var(--sky);font-weight:500;letter-spacing:0.06em;">PYTHON · NLP · AUTOMATION</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="container">
@@ -759,7 +806,7 @@
 
   const nav = document.getElementById('nav');
   const navLinks = document.querySelectorAll('.nav-links a');
-  const sections = ['hero','about','experience','skills','contact'];
+  const sections = ['hero','about','experience','skills','projects','contact'];
 
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
